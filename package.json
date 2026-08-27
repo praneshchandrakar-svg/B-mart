@@ -17,10 +17,14 @@
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "joi": "^18.2.5",
+    "json": "^11.0.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.24.4",
     "multer": "^2.2.0",
+    "nodemon": "^3.1.14",
     "path": "^0.12.7",
+    "simple-git": "^3.36.0",
     "tailwindcss": "^4.3.3"
   }
 }
