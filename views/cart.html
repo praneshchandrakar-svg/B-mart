@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-20">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <!-------Sticky Cart Navbar ------>
+    <div class="navbar-01 sticky top-0 p-3 flex flex-col items-center  w-full bg-white  shadow-[0_1px_1px_-1px_#000] z-40">
+        <div class="content-section flex justify-between items-center w-full pr-3">
+            <div class="logo">
+                <img src="/public/image/Logos/B-mart-Big.png" class="w-40 h-15 p-2">
+            </div>
+            <div class="wishlist">
+                <img src="/public/image/Logos/heart.png" class="w-7 h-7">
+            </div>
+        </div>
+        <div class="px-4 flex items-center justify-between  w-full bg-slate-200">
+            <div class="address flex items-center gap-2 w-full p-1 rounded-xs">
+                <span class="flex items-center justify-center gap-2 text-black font-semibold pr-2 text-xs"><img src="/public/image/Logos/home clicked.png"  class="w-4 h-4">Home</span>
+                <p class="text-zinc-600 text-xs w-full truncate"> Matri chhaya mungeli road lormi</p>
+            </div>
+            <div class="change-option cursor-pointer">
+                <p>></p>
+            </div>
+        </div>
+    </div>
+    <header class="px-6 py-5 mb-40 flex-col flex items-center justify-center gap-5 w-full h-full overflow-hidden">
+    <!------ cart item details ------>
+        <div class="cart-section w-full flex p-1 flex-col">
+            <div class="cart-table w-full">
+                <table class="w-full text-left text-xs">
+                    <tbody>
+                        <tr>
+                            <td class="min-w-20 w-25 h-30">
+                                <div class="left-body bg-slate-200 w-full h-full  flex flex-col shrink-0 items-center justify-center rounded-my overflow-hidden border border-slate-400">
+                                    <img src="/public/image/Logos/B-mart-small.png" class="w-full h-full object-contain">
+                                    <div class="quantity bg-white w-full flex items-center justify-around p-2">
+                                        <button class="minus-btn">-</button>
+                                        <span class="minus-btn">1</span>
+                                        <button class="minus-btn">+</button>
+                                    </div>
+
+                                </div>
+                            <td>
+                                <div class="right-body w-full h-30 p-2 flex flex-col justify-between">
+                                    <div class="product-name">
+                                        <p class="text-[10px] text-green-800 font-semibold">Hot Deal</p> 
+                                        <p class="text-slate-800 text-1xl w-full truncate">Amul ghee by Dabar </p>
+                                    </div>
+                                    <div class="MRP flex items-center gap-3">
+                                        <span class="discount-parcentage text-green-800 font-bold flex items-center"> <img src="/public/image/Logos/right-arrow.png" class="w-3 h-3 rotate-90">75%</span>
+                                        <h1 class="font-bold">$248</h1>
+                                    </div>
+                                    <div class="buttons flex items-center justify-around flex-wrap gap-2">
+                                        <button type="button" class="px-3 py-1.5 border border-slate-400 rounded-[5px] font-semibold"> Remove</button>
+                                        <button type="button" class="px-3 py-1.5 border border-slate-400 rounded-[5px] font-semibold"> Buy Now</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- border between cart and billing -->
+         <div class="line w-full flex justify-end">
+            <hr class="h-[1px] w-full bg-slate-500 border-none rounded-2xl">
+         </div>
+         <!---- Billing Section ------>
+         <div class="billing-section w-full flex flex-col gap-4">
+            <div class="bill-heading">
+                <h2 class="font-semibold">Price Details</h2>
+            </div>
+            <div class="bill-body w-full bg-slate-200 rounded-2xl flex flex-col">
+                <div class="MRP flex justify-between p-3">
+                    <p class="text-[13px]">MRP</p>
+                    <p class="text-[13px]">$999</p>
+                </div>
+                <div class="Plateform border-dashed border-b border-slate-400 flex justify-between p-3">
+                    <p class="text-[13px]">Plateform Fee</p>
+                    <p class="text-[13px]">$9</p>
+                </div>
+
+                <div class="Discount border-b border-slate-400 flex justify-between p-3">
+                    <p class="text-[13px]">Discount on MRP</p>
+                    <p class="text-[13px] text-green-700">-$257</p>
+                </div>
+                <div class="total flex justify-between p-3">
+                    <p class="text-[13px] font-bold">Total Amount</p>
+                    <p class="text-[13px] font-bold">$257</p>
+                </div>
+                <div class="saving-detail bg-green-200 w-full p-1 rounded-b-2xl">
+                    <p class="text-center text-[13px] text-green-900">You'll Save <span class="font-bold">$745</span> on time order</p>
+                </div>
+            </div>
+         </div>
+   </header>
+   <!-- Fixed Buy button -->
+    <div class="buy-fixedbar h-18 fixed bottom-20 flex items-center flex-col w-full bg-white overflow-hidden overflow-x-scroll no-scrollbar shadow-[0_-1px_5px_#000] border-b rounded-t-xl">
+        <!-- Header of bottom nav -->
+        <div class="head-buybar w-full">
+                <div class="saving-detail bg-green-200 w-full rounded-t-xl p-[2px]">
+                    <p class="text-center text-xs text-green-900">You'll Save <span class="font-bold">$745</span> on time order</p>
+                </div>
+        </div>
+        <div class="buy-container w-full h-full flex items-center justify-between  md:justify-center md:gap-10 p-[1px] px-7">
+            <div class="price-details flex flex-col items-center border-dashed border-b">
+                <p class="text-slate-400 text-xs">999</p>
+                <h1 class="text-xs font-bold">$242</h1>
+            </div>
+            <div class="proceed-button">
+                <button type="button" class="px-2 py-1 rounded-my bg-rose-200 font-semibold border border-rose-400 hover:bg-rose-400 text-xs" >Proceed to buy</button>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Navbar -->
+    <div class="navbar-03 fixed bottom-0 p-2 flex items-center w-full gap-2 bg-white h-15 overflow-hidden">
+            <div class="nav-links w-full flex items-center justify-around  md:justify-center md:gap-10">
+                <a href="" class="home flex items-center  flex-col justify-center gap-1 drop-shadow-black">
+                    <div class="icons"><img src="/image/home clicked.png"  class="w-4 h-4" alt="Home"></div>
+                    <p class="text-xs">Home</p>
+                </a>
+                <a href="" class="play flex items-center  flex-col justify-center gap-1">
+                    <div class="icons"><img src="/image/play.png"  class="w-4 h-4"></div>
+                    <p class="text-xs">Play</p>
+                </a>
+                <a href="" class="categories flex items-center  flex-col justify-center gap-1">
+                    <div class="icons"><img src="/image/app.png"  class="w-4 h-4"></div>
+                    <p class="text-xs">Categories</p>
+                </a>
+                <a href="" class="account flex items-center  flex-col justify-center gap-1">
+                    <div class="icons"><img src="/image/User.png"  class="w-4 h-4"></div>
+                    <p class="text-xs">Account</p>
+                </a>
+                <a href="" class="product flex items-center  flex-col justify-center gap-1">
+                    <div class="icons"><img src="/image/cart.png"  class="w-6 h-6"></div>
+                    <p class="text-xs">Cart</p>
+                </a>
+            </div>
+    </div>
+    <!-- Script For Banner -->
+     <script>
+        let progress_container = document.querySelector(".bars");
+        let slides = document.querySelector(".slides");
+        let images = document.querySelectorAll(".images");
+        let index = 0;
+        let duration = 3000;
+
+        images.forEach(()=>{
+            const bar = document.createElement("div");
+            bar.classList.add("bar");
+
+            const progress = document.createElement("span");
+            bar.appendChild(progress)
+            progress_container.appendChild(bar)
+        });
+        const bars = document.querySelectorAll(".bar");
+        function nextSlide(){
+            bars.forEach(bar=>{
+                bar.classList.remove("active-bar");
+                bar.querySelector("span").style.width = "0";
+            });
+
+            index++;
+
+            if(index >= images.length){
+                index = 0;
+            }
+            slides.style.transform = `translateX(-${index * 110}%)`
+
+            bars[index].classList.add("active-bar");
+        }
+        bars[0].classList.add("active-bar");
+
+        setInterval(nextSlide, duration)
+     </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-20">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body>
+    <header class="px-5 py-5 mb-20 flex-col flex items-center justify-center gap-5 w-full h-full overflow-hidden">
+        <!-- User Identity -->
+         <div class="user-detail bg-linear-to-b from-rose-200 to-rose-100 w-full h-auto rounded-2xl flex flex-col justify-between border-2 border-rose-100 p-[2px]">
+            <div class="user-section w-full mt-2 p-2">
+                <h2 class="font-semibold">Pranesh Kumar </h2>
+                <p class="address text-[10px]">mungeli road lormi</p>
+            </div>
+            <div class="offer-section w-full h-10 bg-white rounded-b-2xl flex items-center justify-between p-2">
+                <div class="offer-detail flex items-center gap-2 p-1">
+                    <img src="/public/image/Logos/B-mart-small.png" class="w-15 h-12 shrink-0">
+                    <h1 class="text-[10px] text-shadow-2xs">3 orders left to unlock <span class="font-semibold">Wonderful Gift</span></h1>
+                </div>
+                <a href="#" class=""><img src="/public/image/Logos/right-arrow.png" class="w-7 h-7  p-1 bg-rose-100 rounded-full border border-rose-300 hover:border-rose-400 duration-200"></a>
+            </div>
+         </div>
+         <!-- Users Container -->
+          <div class="users-categories w-full flex flex-wrap items-center justify-center gap-[1%]">
+            <a href="#" class="order flex text-1xl items-center gap-2 border w-[48%] h-12 mt-[1%]  border-slate-300 p-2 justify-center md:w-1/5">
+                <img src="/public/image/Logos/Product.png" class="w-7 h-7">
+                <h1>Order</h1>
+            </a>
+            <a href="#" class="order flex text-1xl items-center gap-2 border w-[48%] h-12 mt-[1%] border-slate-300 p-2 justify-center md:w-1/5">
+                <img src="/public/image/Logos/heart.png" class="w-5 h-5">
+                <h1>Wishlist</h1>
+            </a>
+            <a href="#" class="order flex text-1xl items-center gap-2 border w-[48%] h-12 mt-[1%]  border-slate-300 p-2 justify-center md:w-1/5">
+                <img src="/public/image/Logos/User.png" class="w-5 h-5">
+                <h1>User</h1>
+            </a>
+            <a href="#" class="order flex text-1xl items-center gap-2 border w-[48%] h-12 mt-[1%]  border-slate-300 p-2 justify-center md:w-1/5">
+                <img src="/public/image/Logos/customer-support.png" class="w-5 h-5">
+                <h1>Help Center</h1>
+            </a>
+          </div>
+        <!-- Suggest Products Design -->
+        <div class="allProducts-container w-full h-auto  flex flex-col relative items-center">
+            <div class="allProducts-heading p-2 flex w-full justify-between items-center">
+                <h2 class="text-1xl font-bold">Suggest For You</h2>
+                <a href="#"><img src="/public/image/Logos/right-arrow.png" class="w-7 h-7  p-1 bg-rose-100 rounded-full border border-rose-300 hover:border-rose-400 duration-200"></a>
+            </div>
+            <div class="product-row flex flex-wrap bg-white rounded-2xl w-full mt-1">
+                <a href="#" class="mobile-product flex flex-col p-1 basis-1/3 md:basis-1/7">
+                    <div class="mobile-img bg-slate-100 p-1 flex items-center justify-center rounded-my"><img src="/image/phone3.webp" class="w-25 h-40 md:w-30 md:h-50 object-contain"></div>
+                    <h1 class="font-bold text-center text-xs flex items-center">Oppo</h1>
+                    <div class="price font-bold text-xs text-start">$12,000</div>
+                </a>
+                <a href="#" class="mobile-product flex flex-col p-1 basis-1/3 md:basis-1/7">
+                    <div class="mobile-img bg-slate-100 p-1 flex items-center justify-center rounded-my"><img src="/image/phone3.webp" class="w-25 h-40 md:w-30 md:h-50 object-contain"></div>
+                    <h1 class="font-bold text-center text-xs flex items-center">Oppo</h1>
+                    <div class="price font-bold text-xs text-start">$12,000</div>
+                </a>
+                <a href="#" class="mobile-product flex flex-col p-1 basis-1/3 md:basis-1/7">
+                    <div class="mobile-img bg-slate-100 p-1 flex items-center justify-center rounded-my"><img src="/image/phone3.webp" class="w-25 h-40 md:w-30 md:h-50 object-contain"></div>
+                    <h1 class="font-bold text-center text-xs flex items-center">Oppo</h1>
+                    <div class="price font-bold text-xs text-start">$12,000</div>
+                </a>
+
+            </div>
+        </div>
+        <!-- Logout -->
+        <div class="logOut bg-rose-100 w-full md:w-100 h-15 flex items-center justify-center">
+            <button type="button" class="bg-white w-[80%] h-[60%] border border-slate-300 hover:bg-rose-300 duration-300 cursor-pointer"> LogOut</button>
+        </div>
+    </header>
+    <!-- Bottom Navbar -->
+    <div class="navbar-03 fixed bottom-0 p-2 flex items-center w-full gap-2 bg-linear-to-l bg-white h-18 border-t border-slate-400 overflow-hidden  rounded-t-2xl">
+            <div class="nav-links w-full flex items-center justify-evenly  md:justify-center md:gap-10">
+                <a href="" class="home flex items-center  flex-col justify-center gap-1 drop-shadow-black">
+                    <div class="icons"><img src="/image/home clicked.png"  class="w-4 h-4" alt="Home"></div>
+                    <p class="text-xs">Home</p>
+                </a>
+                <a href="" class="play flex items-center  flex-col justify-center gap-1 p-2">
+                    <div class="icons"><img src="/image/play.png"  class="w-4 h-4"></div>
+                    <p class="text-xs">Play</p>
+                </a>
+                <a href="" class="categories flex items-center  flex-col justify-center gap-1 p-2">
+                    <div class="icons"><img src="/image/app.png"  class="w-4 h-4"></div>
+                    <p class="text-xs">Categories</p>
+                </a>
+                <a href="" class="account flex items-center  flex-col justify-center gap-1 p-2">
+                    <div class="icons"><img src="/image/User.png"  class="w-4 h-4"></div>
+                    <p class="text-xs">Account</p>
+                </a>
+                <a href="" class="product flex items-center  flex-col justify-center gap-1 p-2">
+                    <div class="icons"><img src="/image/cart.png"  class="w-6 h-6"></div>
+                    <p class="text-xs">Cart</p>
+                </a>
+            </div>
+    </div>
+</body>
+</html>
